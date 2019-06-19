@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form id="left_form" name="left_form">
+      <input type="text" name="text_1" value="1"><label> Text</label>
+      <br><br>
+      
+      <textarea name="textarea_1" rows="5" cols="22">1</textarea><label> Textarea</label>
+      <br><br>
+      
+      <input type="checkbox" name="checkbox_1" value="3" checked><label> Var 1</label>
+      <br>
+      <input type="checkbox" name="checkbox_2" value="4"><label> Var 2</label>
+      <br><br>
+      
+      <input type="radio" name="radio_1" value="5" checked><label> Var 1</label>
+      <br>
+      <input type="radio" name="radio_1" value="6"><label> Var 2</label>
+      <br><br>
+      
+      <select name="select_1">
+        <option disabled>Выберите героя</option>
+        <option value="Чебурашка">Чебурашка</option>
+        <option value="Крокодил Гена" selected>Крокодил Гена</option>
+        <option value="Шапокляк">Шапокляк</option>
+        <option value="Крыска Лариска">Крыска Лариска</option>
+      </select>
+      <br><br>
+      
+      <input type="button" name="button_1" value="Button 1"><br><br>
+      <button type="button" name="button_2">Button 2</button>
+    </form>
+    <form id="right_form" name="right_form"></form>
+  </body>
+</html>

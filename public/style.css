@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+
+  input[type="checkbox"][readonly] {
+    pointer-events: none;
+  }
+  
+  input[type="radio"][readonly] {
+    pointer-events: none;
+  }
+  
+  input[type="button"][readonly] {
+    pointer-events: none;
+  }
+  
+  select[readonly] {
+    pointer-events: none;
+  }
+  
+  button[readonly] {
+    pointer-events: none;
+  }
+  
+  .pressedButton {
+    background-color: darkGray;
+  }

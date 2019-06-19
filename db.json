@@ -1,0 +1,93 @@
+{
+  "objects": [
+    {
+      "tagname": "input",
+      "name": "text_1",
+      "value": "1",
+      "attributes": {
+        "type": "text"
+      }
+    },
+    {
+      "tagname": "textarea",
+      "name": "textarea_1",
+      "value": "1",
+      "attributes": {
+        "rows": "5",
+        "cols": "22"
+      }
+    },
+    {
+      "tagname": "input",
+      "name": "checkbox_1",
+      "value": "3",
+      "attributes": {
+        "type": "checkbox",
+        "checked": true
+      }
+    },
+    {
+      "tagname": "input",
+      "name": "checkbox_2",
+      "value": "4",
+      "attributes": {
+        "type": "checkbox",
+        "checked": false
+      }
+    },
+    {
+      "tagname": "input",
+      "name": "radio_1",
+      "value": "5",
+      "attributes": {
+        "type": "radio",
+        "checked": true
+      }
+    },
+    {
+      "tagname": "select",
+      "name": "select_1",
+      "options": [
+        {
+          "disabled": "",
+          "selected": false
+        },
+        {
+          "value": "Чебурашка",
+          "selected": false
+        },
+        {
+          "value": "Крокодил Гена",
+          "selected": true
+        },
+        {
+          "value": "Шапокляк",
+          "selected": false
+        },
+        {
+          "value": "Крыска Лариска",
+          "selected": false
+        }
+      ],
+      "attributes": {}
+    },
+    {
+      "tagname": "input",
+      "name": "button_1",
+      "value": "Button 1",
+      "attributes": {
+        "type": "button",
+        "class": "unpressedButton"
+      }
+    },
+    {
+      "tagname": "button",
+      "name": "button_2",
+      "value": "Button 2",
+      "attributes": {
+        "type": "button",
+        "class": "unpressedButton"
+      }
+    }
+  ]
+}
