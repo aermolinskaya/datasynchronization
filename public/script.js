@@ -4,20 +4,20 @@ var rightForm = document.getElementById("right_form");  //правая форм�
 for (var i = 0; i < leftForm.children.length; i++)  //копирование элементов левой формы в правую
 {
     var cloneElement = leftForm.children[i].cloneNode(true);
-    cloneElement.setAttribute("readonly", "readonly");
+    cloneElement.setAttribute("disabled", "disabled");
     rightForm.appendChild(cloneElement);
 }
 
 var textElems = leftForm.querySelectorAll('input[type=text]');  //все text
 for (var i = 0; i < textElems.length; i++)  //при снятии фокуса отправка данных на сервер
 {
-    textElems[i].addEventListener("mouseout", function() {if (socket.readyState == 1) sendElemsData(this);});
+    textElems[i].addEventListener("change", function() {if (socket.readyState == 1) sendElemsData(this);});
 }
 
 var textareaElems = leftForm.getElementsByTagName('textarea');  //все теги textarea
 for (var i = 0; i < textareaElems.length; i++)  //при снятии фокуса отправка данных на сервер
 {
-    textareaElems[i].addEventListener("mouseout", function() {if (socket.readyState == 1) sendElemsData(this);});
+    textareaElems[i].addEventListener("change", function() {if (socket.readyState == 1) sendElemsData(this);});
 }
 
 var checkboxElems = leftForm.querySelectorAll('input[type=checkbox]');  //все checkbox
@@ -35,7 +35,7 @@ for (var i = 0; i < radioElems.length; i++)  //при клике отправк�
 var selectElems = leftForm.getElementsByTagName('select');  //все select
 for (var i = 0; i < selectElems.length; i++)  //при снятии фокуса отправка данных на сервер
 {
-    selectElems[i].addEventListener("mouseout", function() {if (socket.readyState == 1) sendElemsData(this);});
+    selectElems[i].addEventListener("change", function() {if (socket.readyState == 1) sendElemsData(this);});
 }
 
 var buttonElems = leftForm.getElementsByTagName('button');  //все кнопки в форме с тегом button
@@ -67,7 +67,6 @@ function changeButtonColor(e)  //смена цвета кнопки
     else  //кнопка была в отжатом состоянии
         e.className = "pressedButton";
 }
-
 function sendElemsData(e)  //отправить данные изменённого элемента на сервер
 {
     //формирование сообщения, у всех элементов обязательно должен быть tagname и name, причём их комбинация уникальна
